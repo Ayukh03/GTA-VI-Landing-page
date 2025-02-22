@@ -348,13 +348,13 @@ footer {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        
+            // Select all feature items and buttons
             const featureItems = document.querySelectorAll('.row .feature-item');
             const buttons = document.querySelectorAll('button');
             
 
         
-            
+            // Function to handle scaling
             function addScaleEffect(element) {
                 element.addEventListener('mouseenter', function () {
                     element.style.transform = 'scale(1.05)';
@@ -365,10 +365,10 @@ footer {
                 });
             }
         
-            
+            // Apply scaling to feature items
             featureItems.forEach(item => addScaleEffect(item));
         
-            
+            // Apply scaling to buttons
             buttons.forEach(btn => addScaleEffect(btn));
 
 
